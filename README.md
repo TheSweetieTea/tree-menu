@@ -33,6 +33,10 @@ python3 manage.py makemigrations
 ```
 python3 manage.py migrate
 ```
+## Создание супер пользователя
+```
+python3 manage.py createsuperuser
+```
 ## Запуск проекта в dev-режиме
 - В папке с файлом manage.py выполните команду:
 ```

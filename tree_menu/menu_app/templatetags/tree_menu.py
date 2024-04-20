@@ -13,6 +13,7 @@ def draw_menu(menu_name: str):
             filter(name=menu_name).
             select_related("parent")
         )
+
     return mark_safe(render_menu(menu_items))
 
 

@@ -4,9 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tree Menu</title>
 </head>
 <body>
-    {% draw_menu 'main_menu' %}
+    {% if menu_name %}
+        {% draw_menu menu_name %}
+    {% else %}
+        {% draw_menu 'main_menu' %}
+    {% endif %}
 </body>
 </html>
